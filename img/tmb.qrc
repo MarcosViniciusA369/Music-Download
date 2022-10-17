@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="tmb">
+    <file>sem_img.png</file>
+  </qresource>
+</RCC>

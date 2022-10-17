@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'App/GUI.ui'
+# Form implementation generated from reading ui file 'GUI.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.7
 #
@@ -121,6 +121,70 @@ class Ui_MainWindow(object):
         self.gridLayout.setContentsMargins(9, 0, 9, 0)
         self.gridLayout.setSpacing(0)
         self.gridLayout.setObjectName("gridLayout")
+        self.frame_3 = QtWidgets.QFrame(self.frame_2)
+        self.frame_3.setMaximumSize(QtCore.QSize(16777215, 452))
+        self.frame_3.setStyleSheet("\n"
+"background-color: rgb(218, 218, 218);")
+        self.frame_3.setFrameShape(QtWidgets.QFrame.NoFrame)
+        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frame_3.setObjectName("frame_3")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame_3)
+        self.verticalLayout_3.setContentsMargins(30, 0, 30, 0)
+        self.verticalLayout_3.setSpacing(0)
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.label = QtWidgets.QLabel(self.frame_3)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setMaximumSize(QtCore.QSize(500, 200))
+        self.label.setStyleSheet("border-image: url(:/tmb/sem_img.png);")
+        self.label.setText("")
+        self.label.setScaledContents(True)
+        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setObjectName("label")
+        self.verticalLayout_3.addWidget(self.label)
+        self.label_2 = QtWidgets.QLabel(self.frame_3)
+        self.label_2.setMaximumSize(QtCore.QSize(500, 50))
+        self.label_2.setObjectName("label_2")
+        self.verticalLayout_3.addWidget(self.label_2, 0, QtCore.Qt.AlignHCenter)
+        self.pushButton_5 = QtWidgets.QPushButton(self.frame_3)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_5.sizePolicy().hasHeightForWidth())
+        self.pushButton_5.setSizePolicy(sizePolicy)
+        self.pushButton_5.setMaximumSize(QtCore.QSize(500, 60))
+        self.pushButton_5.setStyleSheet("QPushButton {\n"
+"    color: white;\n"
+"    background-color: rgb(213, 15, 0);\n"
+"    border-radius: 9px; border: 3px solid  rgb(213,15,0);\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: rgb(231,15,0);\n"
+"border-radius: 9px; border: 3px solid  rgb(213,15,0);\n"
+"}")
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.verticalLayout_3.addWidget(self.pushButton_5)
+        self.progressBar = QtWidgets.QProgressBar(self.frame_3)
+        self.progressBar.setStyleSheet("QProgressBar\n"
+"{\n"
+"border: solid red;\n"
+"border-radius: 15px;\n"
+"color: black;\n"
+"}\n"
+"QProgressBar::chunk \n"
+"{\n"
+"background-color: #eb3326;\n"
+"border-radius :15px;\n"
+"}    ")
+        self.progressBar.setProperty("value", 24)
+        self.progressBar.setAlignment(QtCore.Qt.AlignCenter)
+        self.progressBar.setObjectName("progressBar")
+        self.verticalLayout_3.addWidget(self.progressBar)
+        self.gridLayout.addWidget(self.frame_3, 1, 0, 1, 2)
         self.lineEdit = QtWidgets.QLineEdit(self.frame_2)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
@@ -150,51 +214,6 @@ class Ui_MainWindow(object):
 "}")
         self.pushButton_4.setObjectName("pushButton_4")
         self.gridLayout.addWidget(self.pushButton_4, 0, 1, 1, 1)
-        self.frame_3 = QtWidgets.QFrame(self.frame_2)
-        self.frame_3.setMaximumSize(QtCore.QSize(16777215, 452))
-        self.frame_3.setStyleSheet("\n"
-"background-color: rgb(218, 218, 218);")
-        self.frame_3.setFrameShape(QtWidgets.QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QtWidgets.QFrame.Raised)
-        self.frame_3.setObjectName("frame_3")
-        self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.frame_3)
-        self.verticalLayout_3.setContentsMargins(30, 0, 30, 0)
-        self.verticalLayout_3.setSpacing(0)
-        self.verticalLayout_3.setObjectName("verticalLayout_3")
-        self.label = QtWidgets.QLabel(self.frame_3)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
-        self.label.setSizePolicy(sizePolicy)
-        self.label.setMaximumSize(QtCore.QSize(500, 100))
-        self.label.setText("")
-        self.label.setObjectName("label")
-        self.verticalLayout_3.addWidget(self.label)
-        self.label_2 = QtWidgets.QLabel(self.frame_3)
-        self.label_2.setMaximumSize(QtCore.QSize(500, 50))
-        self.label_2.setObjectName("label_2")
-        self.verticalLayout_3.addWidget(self.label_2, 0, QtCore.Qt.AlignHCenter)
-        self.pushButton_5 = QtWidgets.QPushButton(self.frame_3)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton_5.sizePolicy().hasHeightForWidth())
-        self.pushButton_5.setSizePolicy(sizePolicy)
-        self.pushButton_5.setMaximumSize(QtCore.QSize(500, 60))
-        self.pushButton_5.setStyleSheet("QPushButton {\n"
-"    color: white;\n"
-"    background-color: rgb(213, 15, 0);\n"
-"    border-radius: 9px; border: 3px solid  rgb(213,15,0);\n"
-"}\n"
-"\n"
-"QPushButton:hover {\n"
-"    background-color: rgb(231,15,0);\n"
-"border-radius: 9px; border: 3px solid  rgb(213,15,0);\n"
-"}")
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.verticalLayout_3.addWidget(self.pushButton_5)
-        self.gridLayout.addWidget(self.frame_3, 1, 0, 1, 2)
         self.verticalLayout_2.addWidget(self.frame_2)
         self.stackedWidget.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
@@ -311,15 +330,16 @@ class Ui_MainWindow(object):
         self.pushButton.setText(_translate("MainWindow", "SEARCH"))
         self.pushButton_2.setText(_translate("MainWindow", "DOWLOAD"))
         self.pushButton_3.setText(_translate("MainWindow", "CONFIG"))
-        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Insira URL Para Baixar"))
-        self.pushButton_4.setText(_translate("MainWindow", "LINK"))
         self.label.setToolTip(_translate("MainWindow", "<html><head/><body><p align=\"center\">foto</p><p align=\"center\"><br/></p></body></html>"))
         self.label_2.setText(_translate("MainWindow", "TITULO VIDEO"))
         self.pushButton_5.setText(_translate("MainWindow", "CONTINUAR"))
+        self.lineEdit.setPlaceholderText(_translate("MainWindow", "Insira URL Para Baixar"))
+        self.pushButton_4.setText(_translate("MainWindow", "LINK"))
         self.label_3.setText(_translate("MainWindow", "QUALIDADE"))
         self.pushButton_7.setText(_translate("MainWindow", "BAIXAR"))
         self.pushButton_6.setText(_translate("MainWindow", "PASTA"))
         self.lineEdit_2.setPlaceholderText(_translate("MainWindow", "Local Onde Será Salvo"))
+import tmb_rc
 
 
 if __name__ == "__main__":
