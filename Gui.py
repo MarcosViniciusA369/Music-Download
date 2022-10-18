@@ -14,8 +14,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(400, 580)
-        MainWindow.setMinimumSize(QtCore.QSize(400, 580))
+        MainWindow.resize(389, 549)
+        MainWindow.setMinimumSize(QtCore.QSize(300, 500))
         MainWindow.setMaximumSize(QtCore.QSize(16777215, 16777200))
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -127,7 +127,7 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.frame_3.sizePolicy().hasHeightForWidth())
         self.frame_3.setSizePolicy(sizePolicy)
-        self.frame_3.setMaximumSize(QtCore.QSize(16777215, 452))
+        self.frame_3.setMaximumSize(QtCore.QSize(16777215, 400))
         self.frame_3.setStyleSheet("\n"
 "background-color: rgb(218, 218, 218);")
         self.frame_3.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -143,8 +143,8 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
         self.label.setSizePolicy(sizePolicy)
-        self.label.setMinimumSize(QtCore.QSize(300, 20))
-        self.label.setMaximumSize(QtCore.QSize(20, 200))
+        self.label.setMinimumSize(QtCore.QSize(200, 150))
+        self.label.setMaximumSize(QtCore.QSize(500, 200))
         self.label.setStyleSheet("border-image: url(:/tmb/sem_img.png);")
         self.label.setText("")
         self.label.setPixmap(QtGui.QPixmap(":/tmb/ola.jpg"))
@@ -162,7 +162,7 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.pushButton_5.sizePolicy().hasHeightForWidth())
         self.pushButton_5.setSizePolicy(sizePolicy)
-        self.pushButton_5.setMinimumSize(QtCore.QSize(250, 0))
+        self.pushButton_5.setMinimumSize(QtCore.QSize(200, 0))
         self.pushButton_5.setMaximumSize(QtCore.QSize(500, 60))
         self.pushButton_5.setStyleSheet("QPushButton {\n"
 "    color: white;\n"
@@ -182,7 +182,7 @@ class Ui_MainWindow(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.progressBar.sizePolicy().hasHeightForWidth())
         self.progressBar.setSizePolicy(sizePolicy)
-        self.progressBar.setMinimumSize(QtCore.QSize(300, 20))
+        self.progressBar.setMinimumSize(QtCore.QSize(200, 20))
         self.progressBar.setMaximumSize(QtCore.QSize(400, 30))
         self.progressBar.setStyleSheet("QProgressBar\n"
 "{\n"
