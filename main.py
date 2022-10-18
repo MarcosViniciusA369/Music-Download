@@ -31,6 +31,10 @@ class MeuApp(QMainWindow,Ui_MainWindow):
 
         else:
             Thread(target=self.pbar).start()
+            thumb_link = self.yt.thumbnail_url
+
+            img_jpg(thumb_link, 'img/', 'thumb')
+            self.label.setStyleSheet("border-image: url(img/thumb.jpg);")
 
             self.label_2.setText(self.yt.streams[0].title)
             self.progressBar.hide()
